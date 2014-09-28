@@ -7,9 +7,11 @@ var Promise  = require('bluebird'),
 
 function kwestify(response) {
   response.headers = response.headers || {};
-  response.data = through();
-  response.data.pause();
-  response.data.end();
+  if (response.data) {
+    response.data = through();
+    response.data.pause();
+    response.data.end();
+  }
   caseless.httpify(response, response.headers);
   return response;
 }
