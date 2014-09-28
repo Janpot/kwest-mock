@@ -1,0 +1,25 @@
+{
+  "name": "kwest-mock",
+  "version": "0.0.1",
+  "description": "Provides mock kwest object for plugin testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kwest",
+    "mock"
+  ],
+  "author": "Jan Potoms",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.3.2",
+    "caseless": "^0.6.0",
+    "kwest-base": "^0.2.0",
+    "through": "^2.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Janpot/kwest-body.git"
+  }
+}
