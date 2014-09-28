@@ -17,7 +17,7 @@ function kwestify(response) {
 }
 
 function mock(mockKwest) {
-  return kwest(function (request) {
+  return kwest(null, function (request) {
     return mockKwest(request, function (mockResponse) {
       return Promise.resolve(mockResponse).then(kwestify);
     });
