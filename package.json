@@ -1,6 +1,6 @@
 {
   "name": "kwest-mock",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Provides mock kwest object for plugin testing.",
   "main": "index.js",
   "scripts": {
