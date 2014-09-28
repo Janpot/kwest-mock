@@ -2,7 +2,7 @@
 
 var Promise  = require('bluebird'),
     caseless = require('caseless'),
-    kwest    = require('kwest-base'),
+    kwest    = require('kwest'),
     through  = require('through');
 
 function kwestify(response) {
