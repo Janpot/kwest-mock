@@ -7,7 +7,7 @@ var Promise  = require('bluebird'),
 
 function kwestify(response) {
   response.headers = response.headers || {};
-  if (response.data) {
+  if (!response.data) {
     response.data = through();
     response.data.pause();
     response.data.end();
