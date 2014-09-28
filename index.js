@@ -3,6 +3,7 @@
 var Promise  = require('bluebird'),
     caseless = require('caseless'),
     kwest    = require('kwest'),
+    base     = require('kwest-base'),
     through  = require('through');
 
 function kwestify(response) {
@@ -17,11 +18,11 @@ function kwestify(response) {
 }
 
 function mock(mockKwest) {
-  return kwest(null, function (request) {
+  return kwest(null, base(function (request) {
     return mockKwest(request, function (mockResponse) {
       return Promise.resolve(mockResponse).then(kwestify);
     });
-  });
+  }));
 }
 
 module.exports = mock;
