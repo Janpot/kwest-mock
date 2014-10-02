@@ -15,7 +15,7 @@
   "dependencies": {
     "bluebird": "^2.3.2",
     "caseless": "^0.6.0",
-    "kwest": "^0.3.0",
+    "kwest": "^0.3.1",
     "through": "^2.3.6"
   },
   "repository": {
